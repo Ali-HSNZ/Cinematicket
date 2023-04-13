@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors : {
+        main : "#000000",
+        second : "#636363"
+      },
       fontFamily : {
         'iranyekan-thin' : ['iranyekan-thin'],
         'iranyekan-light' : ['iranyekan-light'],
