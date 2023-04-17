@@ -1,6 +1,7 @@
 import { createSlice , createAsyncThunk } from "@reduxjs/toolkit";
 import { apikey, http  } from "@services/http";
 import {EAuthStatus, TLoginPayload } from "@type/auth.types";
+import { setCookie } from "@utils/cookie";
 import { EToastType, toastify } from "@utils/toast";
 import Cookies from "universal-cookie";
 
@@ -44,8 +45,8 @@ const loginSlice = createSlice({
                state.data = action.payload === undefined ? {} : action.payload,
                state.loading = false,
                state.error = '',
-               state.status = EAuthStatus.DEFAULT
-               new Cookies().set("userToken" , action.payload.token , {path : '/'})
+               state.status = EAuthStatus.SUCCESS
+               setCookie({key:"userToken" , value : "action.payload.token", config : {path : '/'}})
           })
           addCase(authLogin.rejected , (state , action) => {
                state.data = {},
