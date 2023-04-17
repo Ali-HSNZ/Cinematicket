@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 type TLayoutProps = {
      children : JSX.Element
@@ -7,7 +8,7 @@ type TLayoutProps = {
 const Layout : React.FunctionComponent<TLayoutProps> = ({children}) : JSX.Element => {
      return (  
           <main className='w-full flex flex-col items-center justify-center pb-28'>
-               {/* <Header/> */}
+               <Header/>
 
                <main className='h-auto w-full grid grid-cols-1 lg:grid-cols-9 gap-x-6 max-w-[1600px]'>
                     {/* <Sidebar/> */}
