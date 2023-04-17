@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@reduxjs/toolkit": "^1.9.3",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
@@ -28,6 +33,7 @@
     "react-redux": "^8.0.5",
     "react-toastify": "^9.1.2",
     "redux": "^4.2.1",
+    "styled-components": "^5.3.9",
     "swiper": "^9.2.0",
     "typescript": "5.0.4",
     "universal-cookie": "^4.0.4",
