@@ -26,7 +26,8 @@
       "@styles/*": ["./src/styles/*"],
       "@utils/*": ["./src/utils/*"],
       "@store/*" : ["./src/redux/store/*"],
-      "@slices/*" : ["./src/redux/slices/*"]
+      "@slices/*" : ["./src/redux/slices/*"],
+      "@static/*" : ["./src/static/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
