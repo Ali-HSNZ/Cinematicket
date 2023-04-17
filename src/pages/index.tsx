@@ -1,12 +1,8 @@
 import Head from 'next/head'
 import Layout from '@layout/Layout'
-import {useSelector , useDispatch} from 'react-redux'
-import { increment , decrement, counterValue } from '@slices/counter'
 
 export default function Home() {
 
-  const count = useSelector(counterValue)
-  const dispatch = useDispatch()
   return (
     <>
       <Head>
@@ -17,9 +13,7 @@ export default function Home() {
       </Head>
       <Layout>
         <>
-          <h2 className='text-3xl font-iranyekan-bold p-8'>عدد {count}</h2>
-          <button className='px-4 py-2 bg-green-400' onClick={() => dispatch(increment())}>Increment +1</button>
-          <button className='px-4 py-2 bg-red-400' onClick={() => dispatch(decrement())}>Decrement -1</button>
+          <h2 className='text-3xl font-iranyekan-bold p-8'>عدد </h2>
         </>
       </Layout>      
     </>
