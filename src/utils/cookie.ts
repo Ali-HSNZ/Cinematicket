@@ -7,4 +7,4 @@ type TCookie = {
 }
 
 export const setCookie : React.FC<TCookie> = ({key , value , config}) : any => new Cookies().set(key , value, config)
-export const userToken =  new Cookies().get("userToken");
+export const userToken =  `Bearer ${new Cookies().get("userToken")}`

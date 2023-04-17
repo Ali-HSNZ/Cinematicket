@@ -17,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
   
   useEffect(()=>{
     const loadUserInfo = async() => {
-      const data = await http.get('/user/profile', {headers : {apikey , token : userToken}})
+      const data = await http.get('/user/profile', {headers : {apikey , Authorization : userToken}})
        .then(res => res.data)
        .catch(error => {
             const message = error?.response?.data?.errors ?? "متاسفانه ورود شما با خطا مواجه شده است."
@@ -25,6 +25,7 @@ function App({ Component, pageProps }: AppProps) {
        })
        return data
     }
+    loadUserInfo()
   },[])
 
   return (

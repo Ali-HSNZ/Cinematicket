@@ -46,7 +46,7 @@ const loginSlice = createSlice({
                state.loading = false,
                state.error = '',
                state.status = EAuthStatus.SUCCESS
-               setCookie({key:"userToken" , value : "action.payload.token", config : {path : '/'}})
+               setCookie({key:"userToken" , value : action.payload.token, config : {path : '/'}})
           })
           addCase(authLogin.rejected , (state , action) => {
                state.data = {},

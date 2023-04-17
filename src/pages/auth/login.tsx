@@ -45,7 +45,7 @@ const AuthLoginPage = () => {
           if(status === EAuthStatus.SUCCESS){
                setTimeout(() => {
                     router.push('/')
-               }, 1500);
+               }, 1000);
                dispatch(changeLoginStatus(EAuthStatus.DEFAULT))
           }
      } , [status])
