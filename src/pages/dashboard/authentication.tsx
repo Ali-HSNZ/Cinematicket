@@ -3,14 +3,7 @@ import Dashboard_Layout from "@layout/dashboard/Dashboard_Layout";
 import { VALIDATION_EMAIL, VALIDATION_PHONE_NUMBER } from "@utils/valiation";
 import { useFormik } from "formik";
 import * as Yup from 'yup'
-import DatePicker,{DateObject} from "react-multi-date-picker"
-import type{Value} from "react-multi-date-picker"
-import Icon from "react-multi-date-picker/components/icon"
-import persian from "react-date-object/calendars/persian"
-import persian_fa from "react-date-object/locales/persian_fa"
 import "react-multi-date-picker/styles/layouts/mobile.css"
-import NumberFormat from "react-number-format";
-import {useState} from 'react'
 
 const EditProfile = () => {
 
