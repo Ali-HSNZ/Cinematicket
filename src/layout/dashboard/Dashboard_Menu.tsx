@@ -38,14 +38,14 @@ const Menu = () => {
                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                </Link>
-               <Link href={'/'} className={`w-full py-4 px-2 ${router.asPath.startsWith('/dashboard/c') ? "bg-red-50 border-red-200" : "hover:bg-red-50 border-transparent hover:border-red-200"} group rounded-md border flex items-center justify-between font-iranyekan-regular text-sm`}>
-                    <div className={`flex items-center gap-x-2 ${router.asPath.startsWith('/dashboard/c') ? "text-red-600" : "group-hover:text-red-600 text-gray-700"}  `}>
+               <Link href={'/dashboard/tickets'} className={`w-full py-4 px-2 ${router.asPath.startsWith('/dashboard/tickets') ? "bg-red-50 border-red-200" : "hover:bg-red-50 border-transparent hover:border-red-200"} group rounded-md border flex items-center justify-between font-iranyekan-regular text-sm`}>
+                    <div className={`flex items-center gap-x-2 ${router.asPath.startsWith('/dashboard/tickets') ? "text-red-600" : "group-hover:text-red-600 text-gray-700"}  `}>
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                          </svg>
                          بلیط های من
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 ${router.asPath.startsWith('/dashboard/c') ? "text-red-600" : "text-gray-600 group-hover:text-red-600"}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 ${router.asPath.startsWith('/dashboard/tickets') ? "text-red-600" : "text-gray-600 group-hover:text-red-600"}`}>
                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                </Link>
