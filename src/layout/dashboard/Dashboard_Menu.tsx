@@ -27,14 +27,14 @@ const Menu = () => {
                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                </Link>
-               <Link href={'/'} className={`w-full py-4 px-2 ${router.asPath.startsWith('/dashboard/c') ? "bg-red-50 border-red-200" : "hover:bg-red-50 border-transparent hover:border-red-200"} group rounded-md border flex items-center justify-between font-iranyekan-regular text-sm`}>
-                    <div className={`flex items-center gap-x-2 ${router.asPath.startsWith('/dashboard/c') ? "text-red-600" : "group-hover:text-red-600 text-gray-700"}  `}>
+               <Link href={'/dashboard/transactions'} className={`w-full py-4 px-2 ${router.asPath.startsWith('/dashboard/transactions') ? "bg-red-50 border-red-200" : "hover:bg-red-50 border-transparent hover:border-red-200"} group rounded-md border flex items-center justify-between font-iranyekan-regular text-sm`}>
+                    <div className={`flex items-center gap-x-2 ${router.asPath.startsWith('/dashboard/transactions') ? "text-red-600" : "group-hover:text-red-600 text-gray-700"}  `}>
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
                          </svg>
                          تراکنش ها
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 ${router.asPath.startsWith('/dashboard/c') ? "text-red-600" : "text-gray-600 group-hover:text-red-600"}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 ${router.asPath.startsWith('/dashboard/transactions') ? "text-red-600" : "text-gray-600 group-hover:text-red-600"}`}>
                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                </Link>
