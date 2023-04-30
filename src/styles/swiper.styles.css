@@ -1,0 +1,64 @@
+/* Change Button Styles */
+/* ------------------- mainSlider Home Page ------------------- */
+ 
+
+._swiper > .swiper-button-prev ,
+._swiper > .swiper-button-next{
+     display: none;
+}
+@media only screen and (min-width : 720px){
+     ._swiper > .swiper-button-prev ,
+     ._swiper > .swiper-button-next{
+         display: flex;
+     }
+}
+
+._swiper > .swiper-button-prev ,
+._swiper > .swiper-button-next{
+     display: none;
+}
+@media only screen and (min-width : 720px){
+     ._swiper > .swiper-button-prev ,
+     ._swiper > .swiper-button-next{
+         display: flex;
+     }
+}
+
+
+/* ------------------- All Swiper ------------------- */
+._swiper .swiper-button-disabled{
+     display: none !important;
+}
+._swiper .swiper-button-next {
+     --swiper-navigation-size : 20px;
+     background-color: rgb(255, 255, 255);
+     padding: 20px 20px; 
+     border-radius: 100%;
+
+     /*! Change Icon */
+     background-image: url(../images/left-arrow.png);
+     background-repeat: no-repeat;
+     background-size: 40% auto;
+     background-position: center;
+}
+._swiper .swiper-button-next::after {
+     display: none;
+}
+ 
+._swiper .swiper-button-prev {
+     --swiper-navigation-size : 20px;
+     background-color: rgb(255, 255, 255);
+     padding: 20px 20px; 
+     border-radius: 100%;
+     margin: 0 10px;
+
+     /*! Change Icon */
+     background-image: url(../images/right-arrow.png);
+     background-repeat: no-repeat;
+     background-size: 40% auto;
+     background-position: center;
+     
+}
+._swiper .swiper-button-prev::after {
+     display: none;
+}
